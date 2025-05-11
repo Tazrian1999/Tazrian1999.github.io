@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/009c167233.js" crossorigin="anonymous"></script>
+    
+</head>
+<body>
+
+    
+
+<div id="header">
+    <div class="container">
+        <nav>
+            <img src="Images/logo.png" class="logo">
+        <ul id="sidemenu">
+            <li><a href="#header">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <i class="fa-solid fa-circle-xmark" onclick="closemenu()"></i>
+        </ul>  
+        <i class="fa-solid fa-bars" onclick="openmenu()"></i>        
+        </nav>
+        <div class="header-text">
+           <p> Welcome,</p>
+           <h1> Hello Everyone,<br> I am <span>Tazrian Zaman Tushti</span></h1> 
+           <h4> I am a passionate Software Quality Assurance (SQA) Engineer.<br>
+                with experience in ensuring software reliability,<br> 
+                functionality, and performance through rigorous testing.<br>
+                 I am dedicated to delivering high-quality software solutions<br>
+            </h4>
+        </div>
+    </div>
+</div>
+
+<!-------------about----->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="Images/user.png" alt="">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p>I have hands-on experience in testing and improving software quality.I strive to ensure every product I work on is functional, user-friendly, and bug-free.
+                </p>
+
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('experience')">Experience </p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+
+                </div>
+
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span> Manual Testing</span><br>Test Case Design ,Test plan<br>
+                        Smoke Testing,Performance Testing
+                        </li>
+                        <li><span> Automation Testing</span><br>Selenium, Postman <br>
+                        TestRigor,Appium
+                        </li>
+                        <li><span> Bug Tracking</span><br>JIRA,Trello</li>
+                    </ul>
+
+                </div>
+                   <div class="tab-contents" id="experience">
+                    <ul>
+                        <li><span> Sept 2024-Ongoing</span><br>Fellow-Software Quality Assurance Engineer at Save the Children International</li>
+                        <li><span> Apr 2023- Oct 2023</span><br>Jr. Software Engineer at Medina Tech Limited</li>
+                        <li><span> Sept 2022-Dec 2022</span><br>Research Assistant at American International University-Bangladesh(AIUB)</li>
+                    </ul>
+
+                </div>
+
+                   <div class="tab-contents"  id="education">
+                    <ul>
+                        <li><span> 2024-Ongoing</span><br>MSc.(Engg) in Computer Science and Engineering from Islamic University of Technology(IUT)</li>
+                        <li><span> 2019-2023</span><br>BSc. in Computer Science and Engineering from American International University-Bangladesh(AIUB)</li>
+                    </ul>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!--------Services------------------->
+<div id="services">
+        <div class="container">
+             <h1 class="sub-title">My Services</h1>  
+             <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2> Web Design</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                     sed do eiusmod tempor incididunt ut 
+                     labore et dolore magna aliqua.</p>
+
+                     <a hred=""#> Learn more</a>
+
+                </div> 
+
+                <div>
+                    <i class="fa-solid fa-computer"></i>
+                    <h2> Software Testing</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                     sed do eiusmod tempor incididunt ut 
+                     labore et dolore magna aliqua.</p>
+
+                     <a hred=""#> Learn more</a>
+
+                </div> 
+
+
+                <div>
+                    <i class="fa-solid fa-bug"></i>
+                    <h2> Bug Tracking</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                     sed do eiusmod tempor incididunt ut 
+                     labore et dolore magna aliqua.</p>
+                     <a hred=""#> Learn more</a>
+
+                </div> 
+
+
+             </div>
+        </div>
+
+</div>
+<!-------------------------Portfolio-------------------------------->
+<div id="portfolio">
+    <div class="container">
+         <h1 class="sub-title">My Works</h1> 
+         <div class="work-list">
+            <div class="work">
+                <img src="Images/work-1.jpg">
+                <div class="layer">
+                    <h3> UFIND App</h3>
+                    <p>UFIND is a multilingual MIS application supporting English, Tamil, and Sinhala. 
+                    This project is conducted for Save the Children in Sri Lanka</p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="Images/work-2.jpg">
+                 <div class="layer">
+                    <h3> Jononi App</h3>
+                    <p>Jononi MIS is an app designed to streamline and manage maternal and child healthcare records.</p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="Images/work-3.png">
+                 <div class="layer">
+                    <h3> Myanmar OnDesk</h3>
+                    <p> Myanmar OnDesk of Save the Children Myanmar. This system ensures functionality, usability,
+                        and performance to optimize the booking experience.</p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+         </div> 
+
+    <a href="#" class="btn"> See more</a>
+    </div>
+</div>
+
+
+<!----------------Contact------------->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-solid fa-paper-plane"></i> zamantz07@gmail.com</p>
+                <div class="social-icons">
+                    <a href="https://www.linkedin.com/in/tazrian-zaman-tushti/"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://github.com/Tazrian1999"><i class="fa-brands fa-github"></i></a>
+                </div>
+                <a href="Images/Tazrian Zaman Tushti_CV.pdf" download class="btn btn2">Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                    <span id="msg"></span> 
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p> Copyright © Tazrian Zaman Tushti</p>
+    </div>
+</div>
+
+<script>
+
+    var tablinks= document.getElementsByClassName("tab-links");
+    var tabcontents= document.getElementsByClassName("tab-contents"); 
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+
+
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+
+    }
+
+</script>
+
+
+<script>
+
+    var sidemenu = document.getElementById("sidemenu");
+
+    function openmenu(){
+        sidemenu.style.right = "0";
+    }
+
+     function closemenu(){
+        sidemenu.style.right = "-200px";
+    }
+</script>
+
+<script>
+  const scriptURL = 'https://script.google.com/macros/s/AKfycbyriepo7XbbkYIXyWP5gMds1XSQhjeH4AdG4tZCIUmY2m4hz8is3670wAhqUZ8cYJKI/exec'
+  const form = document.forms['submit-to-google-sheet']
+  const msg= document.getElementById("msg")
+
+  form.addEventListener('submit', e => {
+    e.preventDefault()
+    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+      .then(response => {
+        msg.innerHTML =" Message has been sent successfully"
+        setTimeout(function(){
+            msg.innerHTML =""
+
+        },5000)
+        form.reset()
+      })
+      .catch(error => console.error('Error!', error.message))
+  })
+</script>
+
+</body>
+</html>
